@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="container" class="container">
+
+    <!-- HEADER -->
+    <header>
+        <h2>Royal Dashboard</h2>
+        <input type="text" placeholder="Cari Kelas, Dokumen, Aktifitas dll...">
+    </header>
+
+    <div class="content">
+
+        <!-- SIDEBAR -->
+        <aside>
+            <a href="#container" class="active">Home</a>
+            <a href="#home">Mahasiswa</a>
+            <a href="#home">Kelas</a>
+            <a href="#aktivitas">Aktivitas</a>
+            <a href="#statistik">Statistik</a>
+            <a href="#dokumen">Dokumen</a>
+            <a href="#">Settings</a>
+            <a href="#" class="logout">Sign Out</a>
+        </aside>
+
+        <!-- KONTEN UTAMA -->
+        <main>
+
+            <!-- SELAMAT DATANG -->
+            <section id="home" class="welcome">
+                <div>
+                    <h2>Selamat Datang, Salsabila</h2>
+                    <h2>Kelas SI-3J</h2>
+                    <p>
+                        Kamu memiliki Statistik, 3 Progres Kelas,
+                        4 Aktifitas Selanjutnya dan 3 Lampiran
+                    </p>
+                    <p>Dokumen yang ada pada aplikasi ini.</p>
+                </div>
+
+                <img src="salsa.jpeg" alt="Foto Mahasiswa">
+            </section>
+        
+            <!-- BAGIAN TENGAH -->
+            <section class="content-middle">
+
+  
+                
+<!-- STATISTIK MAHASISWA -->
+<div id="statistik" class="card statistik">
+
+
+    <div class="gambar-statistik">
+        <img src="foto.png" alt="Statistik Mahasiswa">
+    </div>
+
+</div>
+
+
+                <!-- PROGRES KELAS -->
+                <div id="kelas" class="card">
+                    <h3>Progres Kelas</h3>
+
+                    <div class="kotak">
+                        <b>Matakuliah A</b>
+                        <p>78 Pendaftar</p>
+                    </div>
+
+                    <div class="kotak">
+                        <b>Matakuliah B</b>
+                        <p>30 Pendaftar</p>
+                    </div>
+
+                    <div class="kotak">
+                        <b>Matakuliah C</b>
+                        <p>40 Pendaftar</p>
+                    </div>
+
+                    <div class="kotak">
+                        <b>Matakuliah D</b>
+                        <p>10 Pendaftar</p>
+                    </div>
+                </div>
+
+                <!-- AKTIFITAS -->
+                <div id="aktivitas" class="card">
+                    <h3>Aktifitas Selanjutnya</h3>
+
+                    <div class="kotak">
+                        <b>Perkuliahan Daring 1</b>
+                        <p>Senin, 15 Januari 2025</p>
+                    </div>
+
+                    <div class="kotak">
+                        <b>Perkuliahan Daring 1</b>
+                        <p>Selasa, 15 Februari 2025</p>
+                    </div>
+
+                    <div class="kotak">
+                        <b>Perkuliahan Daring 1</b>
+                        <p>Rabu, 15 Maret 2025</p>
+                    </div>
+
+                    <div class="kotak">
+                        <b>Perkuliahan Daring 1</b>
+                        <p>Kamis, 15 April 2025</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- LAMPIRAN -->
+            <section id="dokumen" class="lampiran">
+                <h3>Lampiran</h3>
+
+                <div class="isi">
+                    <b>Lampiran Dokumen 1</b> -
+                    Matakuliah A | Tugas Bersama Perkuliahan Daring |
+                    <a href="#">Lihat Dokumen</a>
+                </div>
+
+                <div class="isi">
+                    <b>Lampiran Dokumen 2</b> -
+                    Matakuliah B | Tugas Bersama Perkuliahan Daring |
+                    <a href="#">Lihat Dokumen</a>
+                </div>
+
+                <div class="isi">
+                    <b>Lampiran Dokumen 3</b> -
+                    Matakuliah C | Tugas Bersama Perkuliahan Daring |
+                    <a href="#">Lihat Dokumen</a>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+
+</div>
+</body>
+</html>

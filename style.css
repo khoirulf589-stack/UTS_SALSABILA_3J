@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e8f2fc;
+    font-family: Arial, sans-serif;
+    padding: 8px;
+}
+
+/* CONTAINER */
+.container {
+    background: #f3f8ff;
+    padding: 22px;
+    border-radius: 12px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+header h2 {
+    color: #194574;
+}
+
+header input {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #8bb4e9;
+    border-radius: 5px;
+}
+
+/* CONTENT */
+.content {
+    display: flex;
+    gap: 12px;
+}
+
+/* SIDEBAR */
+aside {
+    background: #0755b5;
+    width: 24%;
+    min-height: 500px;
+    border-radius: 4px;
+    padding-top: 32px;
+}
+
+aside a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+aside a:hover,
+aside .active {
+    background: #194574;
+}
+
+aside .logout {
+    color: orange;
+}
+
+/* MAIN */
+main {
+    width: 76%;
+}
+
+/* WELCOME */
+.welcome {
+    background: #0755b5;
+    color: white;
+    padding: 18px 22px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    font-size: 11px;
+    margin-top: 8px;
+}
+
+.welcome img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 10%;
+}
+
+/* BAGIAN TENGAH */
+.content-middle {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.card {
+    background: white;
+    padding: 12px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.card h3,
+.lampiran h3 {
+    font-size: 13px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.card:hover{
+    background-color: #194574;
+}
+
+
+/* STATISTIK MAHASISWA */
+
+.statistik h3 {
+  color: #333;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.gambar-statistik {
+  width: 100%;          
+  max-width: 500px;    
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;       
+}
+
+.gambar-statistik img {
+  width: 340px;
+  height: 250px;
+  object-fit: contain;
+}
+/* KOTAK PROGRES DAN AKTIFITAS */
+.kotak {
+    background: #eef5fd;
+    padding: 12px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    font-size: 10px;
+}
+
+.kotak p {
+    color: #0755b5;
+    margin-top: 5px;
+}
+
+/* LAMPIRAN */
+.lampiran {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.lampiran:hover{
+    background-color: #194574;
+}
+.isi {
+    background: #eef5fd;
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-size: 11px;
+}
+
+.isi a {
+    color: #0755b5;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* TAMPILAN HP */
+@media screen and (max-width: 700px) {
+
+    .content {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        min-height: auto;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .content-middle {
+        flex-direction: column;
+    }
+
+    header input {
+        width: 45%;
+    }
+
+    .welcome {
+        gap: 10px;
+    }
+
+    .welcome h2 {
+        font-size: 16px;
+    }
+}
